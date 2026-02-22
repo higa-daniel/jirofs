@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cardápio e Delivery',
+      title: 'Menu',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2E7D32)),
@@ -75,10 +75,24 @@ class _MenuScreenState extends State<MenuScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cardápio e Delivery'),
-        centerTitle: true,
+        toolbarHeight: 176,
         elevation: 0,
         scrolledUnderElevation: 2,
+        title: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              height: 112,
+              child: Image.asset('assets/logo.png'),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'Menu',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+        centerTitle: true,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -196,11 +210,12 @@ class _MenuItemCard extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Container(
+              child: SizedBox(
                 width: 80,
                 height: 80,
-                color: Colors.grey.shade200,
-                child: Icon(Icons.restaurant, color: Colors.grey.shade400, size: 36),
+                child: item.imageUrl != null
+                    ? _buildItemImage(item.imageUrl!)
+                    : _buildPlaceholderIcon(),
               ),
             ),
             const SizedBox(width: 12),
@@ -277,6 +292,51 @@ class _MenuItemCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildItemImage(String imageUrl) {
+    final isAsset = imageUrl.startsWith('asset:');
+    final placeholder = _buildPlaceholderIcon();
+    
+    print('Attempting to load image: $imageUrl (isAsset: $isAsset)');
+    
+    if (isAsset) {
+      final path = imageUrl.substring(6); // Remove 'asset:' prefix (6 characters)
+      print('Loading asset image from path: $path');
+      return Image.asset(
+        path,
+        fit: BoxFit.cover,
+        width: 80,
+        height: 80,
+        errorBuilder: (context, error, stackTrace) {
+          print('Image.asset error for path: $path, error: $error');
+          print('Stack trace: $stackTrace');
+          return placeholder;
+        },
+      );
+    } else {
+      print('Loading network image from URL: $imageUrl');
+      return Image.network(
+        imageUrl,
+        fit: BoxFit.cover,
+        width: 80,
+        height: 80,
+        errorBuilder: (context, error, stackTrace) {
+          print('Image.network error for URL: $imageUrl, error: $error');
+          print('Stack trace: $stackTrace');
+          return placeholder;
+        },
+      );
+    }
+  }
+
+  Widget _buildPlaceholderIcon() {
+    return Container(
+      width: 80,
+      height: 80,
+      color: Colors.grey.shade200,
+      child: Icon(Icons.restaurant, color: Colors.grey.shade400, size: 36),
     );
   }
 }

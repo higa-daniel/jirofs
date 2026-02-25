@@ -15,7 +15,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Batata crocante com pó de alga e sal marinho.',
     price: 30.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id01.png',
+    imageUrl: 'asset:assets/items/id01.jpg',
   ),
   MenuItem(
     id: '2',
@@ -23,7 +23,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Batatas longas no estilo japonês.',
     price: 35.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id02.png',
+    imageUrl: 'asset:assets/items/id02.jpg',
   ),
   MenuItem(
     id: '3',
@@ -39,7 +39,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Quiabo tostado com manteiga de missô.',
     price: 30.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id04.png',
+    imageUrl: 'asset:assets/items/id04.jpg',
   ),
   MenuItem(
     id: '5',
@@ -55,7 +55,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Frango crocante estilo rua de Seul, molho KFC e picles.',
     price: 45.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id06.png',
+    imageUrl: 'asset:assets/items/id06.jpeg',
   ),
   MenuItem(
     id: '7',
@@ -63,23 +63,23 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Panceta crocante servida com molho apimentado coreano à parte.',
     price: 50.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id07.png',
+    imageUrl: 'asset:assets/items/id07.jpg',
   ),
   MenuItem(
     id: '8',
     name: 'Korokke de milho e queijo',
-    description: 'Croquete japonês dourado e crocante por fora, cremoso por dentro.',
-    price: 30.0,
+    description: 'Croquete japonês recheado com milho e queijo cremoso.',
+    price: 35.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id08.png',
+    imageUrl: 'asset:assets/items/id08.jpg',
   ),
   MenuItem(
     id: '9',
     name: 'Korokke de gyutan',
     description: 'Croquete crocante recheado com gyutan (língua bovina) macia e bem temperada.',
-    price: 30.0,
+    price: 35.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id09.png',
+    imageUrl: 'asset:assets/items/id09.jpg',
   ),
   MenuItem(
     id: '10',
@@ -88,7 +88,7 @@ const List<MenuItem> sampleMenuItems = [
         'Bolinhas quentes de massa leve com polvo macio no centro. Finalizadas com molho adocicado, maionese japonesa e flocos dançando no vapor.',
     price: 60.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id10.png',
+    imageUrl: 'asset:assets/items/id10.jpeg',
   ),
 
   // Sandoburgers (pratos)
@@ -120,9 +120,9 @@ const List<MenuItem> sampleMenuItems = [
     id: '14',
     name: 'Cheese Sando',
     description: 'Queijo coalho mineiro empanado, geleia de mel e pimenta e pão shokupan tostado na manteiga.',
-    price: 30.0,
+    price: 40.0,
     categoryId: 'pratos',
-    imageUrl: 'asset:assets/items/id14.png',
+    imageUrl: 'asset:assets/items/id14.jpg',
   ),
   MenuItem(
     id: '15',
@@ -131,7 +131,7 @@ const List<MenuItem> sampleMenuItems = [
         '2 burgers angus de 80g, molho bulgogi, alface americana, picles de pepino e pão shokubun com gergelim.',
     price: 40.0,
     categoryId: 'pratos',
-    imageUrl: 'asset:assets/items/id15.png',
+    imageUrl: 'asset:assets/items/id15.jpg',
   ),
   MenuItem(
     id: '16',
@@ -140,15 +140,15 @@ const List<MenuItem> sampleMenuItems = [
         'Duplo burger angus de 100g, bacon crocante, requeijão de corte Fazenda Atalaia, maionese oki e pão shokubun.',
     price: 50.0,
     categoryId: 'pratos',
-    imageUrl: 'asset:assets/items/id16.png',
+    imageUrl: 'asset:assets/items/id16.jpg',
   ),
   MenuItem(
     id: '17',
     name: 'KFC',
     description: 'Frango crocante no estilo coreano, alface americana, maionese oki e pão shokubun.',
-    price: 50.0,
+    price: 35.0,
     categoryId: 'pratos',
-    imageUrl: 'asset:assets/items/id17.png',
+    imageUrl: 'asset:assets/items/id17.jpg',
   ),
   MenuItem(
     id: '18',
@@ -163,18 +163,18 @@ const List<MenuItem> sampleMenuItems = [
     id: '19',
     name: 'Oki Burger',
     description: 'Burger angus, queijo prato artesanal e molho teriyaki da casa no pão shokubun.',
-    price: 30.0,
+    price: 35.0,
     categoryId: 'pratos',
-    imageUrl: 'asset:assets/items/id19.png',
+    imageUrl: 'asset:assets/items/id19.jpg',
   ),
   MenuItem(
     id: '20',
     name: 'Pão com ovo',
     description:
         'Ovos cremosos, cebolinha fresca, queijo cheddar inglês, cebolas caramelizadas e maionese de sriracha no pão shokubun quentinho.',
-    price: 30.0,
+    price: 35.0,
     categoryId: 'pratos',
-    imageUrl: 'asset:assets/items/id20.png',
+    imageUrl: 'asset:assets/items/id20.jpg',
   ),
 
   // Sobremesas
@@ -184,7 +184,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Carolina japonesa de casquinha leve e delicada, recheada com creme de baunilha.',
     price: 18.0,
     categoryId: 'sobremesas',
-    imageUrl: 'asset:assets/items/id21.png',
+    imageUrl: 'asset:assets/items/id21.jpg',
   ),
   MenuItem(
     id: '22',
@@ -192,7 +192,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Torta japonesa com chocolate meio amargo e intenso.',
     price: 25.0,
     categoryId: 'sobremesas',
-    imageUrl: 'asset:assets/items/id22.png',
+    imageUrl: 'asset:assets/items/id22.jpg',
   ),
 
   // Bebidas
@@ -210,7 +210,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Cerveja puro malte premium com sabor equilibrado e leve amargor.',
     price: 10.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id24.png',
+    imageUrl: 'asset:assets/items/id24.jpg',
   ),
   MenuItem(
     id: '25',
@@ -280,7 +280,7 @@ const List<MenuItem> sampleMenuItems = [
     id: '33',
     name: 'Coca zero lata 350ml',
     description: 'Refrigerante cola zero açúcar lata 350ml.',
-    price: 7.9,
+    price: 8.0,
     categoryId: 'bebidas',
     imageUrl: 'asset:assets/items/id33.png',
   ),
@@ -296,7 +296,7 @@ const List<MenuItem> sampleMenuItems = [
     id: '35',
     name: 'Guaraná Antarctica zero lata 350ml',
     description: 'Refrigerante de guaraná zero açúcar lata 350ml.',
-    price: 7.9,
+    price: 8.0,
     categoryId: 'bebidas',
     imageUrl: 'asset:assets/items/id35.png',
   ),
@@ -314,7 +314,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Refrigerante sabor laranja gaseificado lata 350ml.',
     price: 8.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id37.png',
+    imageUrl: 'asset:assets/items/id37.jpg',
   ),
   MenuItem(
     id: '38',

@@ -12,15 +12,15 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '1',
     name: 'Nori Fries',
-    description: 'Batata crocante com pó de alga e sal marinho.',
+    description: 'Batatas fritas crocantes no estilo japonês, envoltas em sal e nori em pó que dá um toque especial de umami.',
     price: 30.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id01.jpg',
   ),
   MenuItem(
     id: '2',
-    name: 'Long Fries',
-    description: 'Batatas longas no estilo japonês.',
+    name: 'Long Potato',
+    description: 'Massa especial de batata cortada em tiras grandes e fritas. Um clássico das comidas de rua do Japão.',
     price: 35.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id02.jpg',
@@ -28,7 +28,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '3',
     name: 'Berinjela Fries',
-    description: 'Berinjela empanada crocante.',
+    description: 'Palitos de berinjela empanados e fritos, com molho tonkatsu e maionese da casa.',
     price: 35.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id03.png',
@@ -36,7 +36,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '4',
     name: 'Quiabo com manteiga de missô',
-    description: 'Quiabo tostado com manteiga de missô.',
+    description: 'Quiabo tostado finalizado com manteiga de missô.',
     price: 30.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id04.jpg',
@@ -44,7 +44,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '5',
     name: 'Karaage',
-    description: 'Frango marinado tradicional japonês.',
+    description: 'O tradicional frango frito japonês.',
     price: 45.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id05.png',
@@ -52,15 +52,15 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '6',
     name: 'KFC',
-    description: 'Frango crocante estilo rua de Seul, molho KFC e picles.',
+    description: 'Frango frito coreano envolto em um molho agridoce e picante com pasta de pimenta coreana e picles.',
     price: 45.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id06.jpeg',
   ),
   MenuItem(
     id: '7',
-    name: 'Pancetoki',
-    description: 'Panceta crocante servida com molho apimentado coreano à parte.',
+    name: 'Panceta cantonesa',
+    description: 'Barriga de porco assada no estilo cantonês, com pele pururucada e carne suculenta e temperada. Fatias generosas servidas com mostarda karashi e sal com pimenta.',
     price: 50.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id07.jpg',
@@ -85,7 +85,7 @@ const List<MenuItem> sampleMenuItems = [
     id: '10',
     name: 'Takoyaki',
     description:
-        'Bolinhas quentes de massa leve com polvo macio no centro. Finalizadas com molho adocicado, maionese japonesa e flocos dançando no vapor.',
+        'Bolinho de polvo com molho teriyaki, maionese da casa e flocos de peixe bonito dançando no vapor.',
     price: 60.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id10.jpeg',
@@ -95,7 +95,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '11',
     name: 'Katsu Sando',
-    description: 'Carne suína empanada crocante, picles, molho tonkatsu e pão shokupan tostado.',
+    description: 'Carne suína empanada crocante, picles, molho tonkatsu e pão de leite japonês tostado. Acompanha fritas.',
     price: 40.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id11.png',
@@ -103,7 +103,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '12',
     name: 'Gyu Katsu Sando',
-    description: 'Bife empanado ao ponto, maionese com chimi de nirá e pão shokupan tostado.',
+    description: 'Bife empanado ao ponto, maionese com chimi de nirá e pão de leite japonês tostado. Acompanha fritas.',
     price: 50.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id12.png',
@@ -111,7 +111,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '13',
     name: 'Tori Katsu Sando',
-    description: 'Frango empanado crocante, alface americana, maionese oki e pão shokupan tostado.',
+    description: 'Frango empanado crocante, alface americana, maionese da casa e pão de leite japonês tostado. Acompanha fritas.',
     price: 35.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id13.png',
@@ -119,7 +119,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '14',
     name: 'Cheese Sando',
-    description: 'Queijo coalho mineiro empanado, geleia de mel e pimenta e pão shokupan tostado na manteiga.',
+    description: 'Queijo coalho mineiro empanado, geleia de mel e pimenta e pão de leite japonês tostado na manteiga. Acompanha fritas.',
     price: 40.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id14.jpg',
@@ -127,8 +127,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '15',
     name: 'Bulgergui',
-    description:
-        '2 burgers angus de 80g, molho bulgogi, alface americana, picles de pepino e pão shokubun com gergelim.',
+    description: '2 burgers angus de 80g, molho bulgogi, alface americana, picles de pepino e pão de hambúrguer da casa com gergelim. Acompanha fritas.',
     price: 40.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id15.jpg',
@@ -136,8 +135,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '16',
     name: 'Baconzilla',
-    description:
-        'Duplo burger angus de 100g, bacon crocante, requeijão de corte Fazenda Atalaia, maionese oki e pão shokubun.',
+    description: 'Duplo burger angus de 100g, bacon crocante, requeijão de corte Fazenda Atalaia, maionese da casa e pão de hambúrguer da casa. Acompanha fritas.',
     price: 50.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id16.jpg',
@@ -145,7 +143,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '17',
     name: 'KFC',
-    description: 'Frango crocante no estilo coreano, alface americana, maionese oki e pão shokubun.',
+    description: 'Frango crocante no estilo coreano, alface americana, maionese da casa e pão de hambúrguer da casa. Acompanha fritas.',
     price: 35.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id17.jpg',
@@ -154,7 +152,7 @@ const List<MenuItem> sampleMenuItems = [
     id: '18',
     name: 'Oki Salad',
     description:
-        'Burger angus, queijo prato artesanal, alface, cebola roxa, picles baby e molho teriyaki da casa no pão shokubun.',
+        'Burger angus, queijo prato artesanal, alface, cebola roxa, picles baby e molho teriyaki da casa no pão de hambúrguer da casa. Acompanha fritas.',
     price: 40.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id18.png',
@@ -162,7 +160,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '19',
     name: 'Oki Burger',
-    description: 'Burger angus, queijo prato artesanal e molho teriyaki da casa no pão shokubun.',
+    description: 'Burger angus, queijo prato artesanal e molho teriyaki da casa no pão de hambúrguer da casa. Acompanha fritas.',
     price: 35.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id19.jpg',
@@ -170,8 +168,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '20',
     name: 'Pão com ovo',
-    description:
-        'Ovos cremosos, cebolinha fresca, queijo cheddar inglês, cebolas caramelizadas e maionese de sriracha no pão shokubun quentinho.',
+    description: 'Ovos cremosos, cebolinha fresca, queijo cheddar inglês, cebolas caramelizadas e maionese de sriracha no pão de hambúrguer da casa quentinho. Acompanha fritas.',
     price: 35.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id20.jpg',

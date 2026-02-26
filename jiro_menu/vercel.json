@@ -2,7 +2,7 @@
   "buildCommand": "flutter build web",
   "outputDirectory": "build/web",
   "framework": null,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/[^.]+", "dest": "/index.html", "status": 200 }
   ]
 }

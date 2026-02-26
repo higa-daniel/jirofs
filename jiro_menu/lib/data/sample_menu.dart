@@ -88,7 +88,7 @@ const List<MenuItem> sampleMenuItems = [
         'Bolinho de polvo com molho teriyaki, maionese da casa e flocos de peixe bonito dançando no vapor.',
     price: 60.0,
     categoryId: 'entradas',
-    imageUrl: 'asset:assets/items/id10.jpeg',
+    imageUrl: 'asset:assets/items/id10.jpg',
   ),
 
   // Sandoburgers (pratos)

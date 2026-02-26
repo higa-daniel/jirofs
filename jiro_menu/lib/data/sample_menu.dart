@@ -12,7 +12,7 @@ const List<MenuItem> sampleMenuItems = [
   MenuItem(
     id: '1',
     name: 'Nori Fries',
-    description: 'Batatas fritas crocantes no estilo japonês, envoltas em sal e nori em pó que dá um toque especial de umami.',
+    description: 'Batatas rústicas crocantes temperadas no estilo japonês, envoltas em sal e nori em pó com sabor umami.',
     price: 30.0,
     categoryId: 'entradas',
     imageUrl: 'asset:assets/items/id01.jpg',
@@ -51,7 +51,7 @@ const List<MenuItem> sampleMenuItems = [
   ),
   MenuItem(
     id: '6',
-    name: 'KFC',
+    name: 'Korean Fried Chicken (KFC)',
     description: 'Frango frito coreano envolto em um molho agridoce e picante com pasta de pimenta coreana e picles.',
     price: 45.0,
     categoryId: 'entradas',
@@ -142,7 +142,7 @@ const List<MenuItem> sampleMenuItems = [
   ),
   MenuItem(
     id: '17',
-    name: 'KFC',
+    name: 'Oki Chicken',
     description: 'Frango crocante no estilo coreano, alface americana, maionese da casa e pão de hambúrguer da casa. Acompanha fritas.',
     price: 35.0,
     categoryId: 'pratos',
@@ -169,7 +169,7 @@ const List<MenuItem> sampleMenuItems = [
     id: '20',
     name: 'Pão com ovo',
     description: 'Ovos cremosos, cebolinha fresca, queijo cheddar inglês, cebolas caramelizadas e maionese de sriracha no pão de hambúrguer da casa quentinho. Acompanha fritas.',
-    price: 35.0,
+    price: 30.0,
     categoryId: 'pratos',
     imageUrl: 'asset:assets/items/id20.jpg',
   ),
@@ -207,7 +207,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Cerveja puro malte premium com sabor equilibrado e leve amargor.',
     price: 10.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id24.jpg',
+    imageUrl: 'asset:assets/items/id24.webp',
   ),
   MenuItem(
     id: '25',
@@ -215,7 +215,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Versão sem álcool da Heineken, mantendo o sabor característico.',
     price: 12.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id25.png',
+    imageUrl: 'asset:assets/items/id25.webp',
   ),
   MenuItem(
     id: '26',
@@ -223,7 +223,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Cerveja lager mexicana leve e refrescante, ideal com limão.',
     price: 10.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id26.png',
+    imageUrl: 'asset:assets/items/id26.webp',
   ),
   MenuItem(
     id: '27',
@@ -231,7 +231,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'American lager leve, suave e refrescante.',
     price: 10.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id27.png',
+    imageUrl: 'asset:assets/items/id27.webp',
   ),
   MenuItem(
     id: '28',
@@ -239,7 +239,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'India Pale Ale encorpada com notas cítricas e amargor marcante.',
     price: 16.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id28.png',
+    imageUrl: 'asset:assets/items/id28.webp',
   ),
   MenuItem(
     id: '29',
@@ -287,7 +287,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Refrigerante de guaraná tradicional brasileiro lata 350ml.',
     price: 7.9,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id34.png',
+    imageUrl: 'asset:assets/items/id34.webp',
   ),
   MenuItem(
     id: '35',
@@ -295,7 +295,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Refrigerante de guaraná zero açúcar lata 350ml.',
     price: 8.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id35.png',
+    imageUrl: 'asset:assets/items/id35.webp',
   ),
   MenuItem(
     id: '36',
@@ -303,7 +303,7 @@ const List<MenuItem> sampleMenuItems = [
     description: 'Refrigerante sabor limão gaseificado lata 350ml.',
     price: 8.0,
     categoryId: 'bebidas',
-    imageUrl: 'asset:assets/items/id36.png',
+    imageUrl: 'asset:assets/items/id36.webp',
   ),
   MenuItem(
     id: '37',
@@ -315,8 +315,8 @@ const List<MenuItem> sampleMenuItems = [
   ),
   MenuItem(
     id: '38',
-    name: 'Suco natural de laranja 350ml',
-    description: 'Suco de laranja natural feito na hora, 350ml.',
+    name: 'Suco de laranja natural 350ml',
+    description: 'Suco de laranja natural feito na hora.',
     price: 15.0,
     categoryId: 'bebidas',
     imageUrl: 'asset:assets/items/id38.png',

@@ -208,11 +208,12 @@ class _MenuItemCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // 120x120 thumbnail image
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: SizedBox(
-                width: 80,
-                height: 80,
+                width: 120,
+                height: 120,
                 child: item.imageUrl != null
                     ? _buildItemImage(item.imageUrl!)
                     : _buildPlaceholderIcon(),
@@ -235,7 +236,7 @@ class _MenuItemCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: Colors.grey.shade600,
                         ),
-                    maxLines: 2,
+                    maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                   ),
                   const SizedBox(height: 8),
@@ -307,8 +308,8 @@ class _MenuItemCard extends StatelessWidget {
       return Image.asset(
         path,
         fit: BoxFit.cover,
-        width: 80,
-        height: 80,
+        width: 120,
+        height: 120,
         errorBuilder: (context, error, stackTrace) {
           print('Image.asset error for path: $path, error: $error');
           print('Stack trace: $stackTrace');
@@ -320,8 +321,8 @@ class _MenuItemCard extends StatelessWidget {
       return Image.network(
         imageUrl,
         fit: BoxFit.cover,
-        width: 80,
-        height: 80,
+        width: 120,
+        height: 120,
         errorBuilder: (context, error, stackTrace) {
           print('Image.network error for URL: $imageUrl, error: $error');
           print('Stack trace: $stackTrace');
@@ -333,10 +334,10 @@ class _MenuItemCard extends StatelessWidget {
 
   Widget _buildPlaceholderIcon() {
     return Container(
-      width: 80,
-      height: 80,
+      width: 120,
+      height: 120,
       color: Colors.grey.shade200,
-      child: Icon(Icons.restaurant, color: Colors.grey.shade400, size: 36),
+      child: Icon(Icons.restaurant, color: Colors.grey.shade400, size: 48),
     );
   }
 }
